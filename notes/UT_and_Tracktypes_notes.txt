@@ -1,0 +1,21 @@
+brief notes from L funkte masterarbeit:
+
+-silicon strip tracker with 100 - 200 micro metre pitch
+-4 tracking planes
+-arranged in X-U-V-X stereo pattern
+-U and V are rotated by +- 5 degrees too achieve 2D spatial resolution while suppressing ghost hits in reconstruction
+-
+
+for momentum measurements there is a 4Tm (Tesla metre) integrated magnetic field between UT and SciFi
+
+Tracktypes:
+Tracks inside VELO: VELO track
+Long Tracks: extended VELO Tracks matches hits in UT and SciFi
+Upstream Tracks: Tracks that leave the Detector after passing the UT
+Tracks without hits in th VELO:
+-> Downstream Tracks: Hits in UT and SciFi for long lived particles like Lambda and K_s
+-> TTracks:only Hits in SciFi, here the seeding algorithm is used
+
+But: TTracks found by seeding can also be found as long tracks by forward tracking -> special algorithm deletes duplicates
+
+In general: SciFi tracker has 99% single hit efficiency

@@ -1,0 +1,10 @@
+short note from L funkte masterarbeit:
+
+-Velo has 30 micro metre spatial hit resolution for 1 GeV transverse momentum
+-primary vertex finding eff roughly 90%
+-52 modules with 4 hybrid pixel sensors each arranged in 2 havlves with 26 modules each
+-can be opened by up to 30mm (3cm)
+-VELO inside VELO tank and inside it's own pressure chamber, separated from the beam pipe vacuum with 150 micro metre thin aluminium foil
+-can be close as near as 5.1 mm to the beam pipe for best possible vertex resolution
+-open state for unstable beam conditions or if something is broken
+-

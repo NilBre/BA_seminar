@@ -1,0 +1,89 @@
+source: masterarbeit_L_funke.pdf
+----------------------------------------------
+-2009 -> 2018
+-not a detector taking physics data, but as safety measure
+-situated in 2 stations upstream of magnet
+
+BCM before LS2 upgrade:
+-fast particle flux measurement system
+-2 rings with 8 diamond sensors at 2 z-positions around
+-BCM-U is upstream of the VELO
+-BCM-D is downsteam of of TT (previous -> now UT)
+
+-200 V bias voltage
+-current through diamonds is read out by current-to-frequency converter (CFC) cards [these were originally designed for LHC beam loss monitor]
+-CFC cards integration time = 40 micro seconds
+-CFC cards measurement range = (2.5 pico Amp (pA), 1 milli Amp (mA))
+--> this is adequate for BCM diamonds since they show dark current in pico Amp range and dump threshold in micro Amp range
+-digitized signal sent through redundant optical fibres with rate of 125kHz to TELL1 readout board
+-firmware of TELL1 board applies "beam dump" logic to determine wether measured flux values are in problematic ranges
+-TELL1 board located in D3 rack behind shielding wall in cavern where are IU is located
+-> UI can do:
+--> 1.) when conditions are met TELL1 can request beam dump
+--> 2.) can inhibit injection of further bunches
+-post-mortem trigger: request a snapshot of systems current data
+-possible to send signal to VELO to open and move into safe position
+
+-during last months of LHC run 2 problems with BCM emerged
+-> multiple diamonds showed excessive currents during normal LHC conditions
+-cause: maybe radiation damage
+
+----------------------------------------------------------------------------------------
+upgraded BCM system: 2019 -> 2022
+
+-all  subddetectors getting a new readout hardware
+-TELL1 FPGA readout board is getting deprecated
+-new LHCb wide used readout boards used -> PCIe40 (BCM40 is the variant for BCM called)
+-> this board will be implemented in the new data center above ground with CIBU stauing in the cavern it will need an extra component:
+--> MIBAD board: machine interface and beam abort decision board
+-featuring Intel Arriva FPGA  will be placed in the same rack as TELL1 was previously
+-> handles low level parts of BCM system:
+1: receiving the read-out data
+2: implementing beam-dump logic
+3: interfacing to the machine
+
+-> this data is tunneled to BCM40 at surface center
+-Using BCM40 as interface to MIBAD board -> computer system housing BCM40 runs monitoring alowing observation and control of the whole system from 
+the LHCb control room
+
+BCM upgrade regarding diamonds:
+-radiation damage -> sensors failed -> replacement of whole system
+-to avoid said damage in the future:
+-> characterization of diamond sensors with charge collection efficiency
+
+Field Programmable Gate Arrays --> FPGAs
+-integrated digital circuits
+-feature high number of reconfigurable logic blocks
+-output depends on input (logic based)
+-use look up table
+-page 12 L Funke masterthesis: diagramm of FPGA
+
+Diamonds Fundamentals:
+-bethe bloch for energy deposition
+-crystalline carbon
+-2 displaced fcc lattices
+-43 eV needed to remove an atom from the lattice
+-high mechanical hardness
+-band gap of 5.47 eV indicates isulator but can be semiconductor as well
+-large band gap -> low number of charge carriers -> low dark current
+-large band gap + high displcement threshold --> very radiation hard
+-CCE picture on page 30
+
+Summary:
+sensitive components are placed so close to damaging beams that it needs to be continuously monitored -> BCM used for that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

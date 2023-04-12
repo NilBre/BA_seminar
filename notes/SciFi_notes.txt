@@ -1,0 +1,9 @@
+brief notes from L Funke: -> more notes later from my master thesis
+
+-last element of the tracking system
+-large tracking system consisting of 12 layers in 3 stations
+-made out of scintillating fibre mats
+-spatial mass resolution of 100 microns
+-covering an area of 360 m^2
+-X1-U-V-X2 layer pattern with U-V stereo angles repeating for every station
+
