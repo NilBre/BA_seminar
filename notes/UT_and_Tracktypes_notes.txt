@@ -4,9 +4,7 @@ brief notes from L funkte masterarbeit:
 -4 tracking planes
 -arranged in X-U-V-X stereo pattern
 -U and V are rotated by +- 5 degrees too achieve 2D spatial resolution while suppressing ghost hits in reconstruction
--
-
-for momentum measurements there is a 4Tm (Tesla metre) integrated magnetic field between UT and SciFi
+-for momentum measurements there is a 4Tm (Tesla metre) integrated magnetic field between UT and SciFi
 
 Tracktypes:
 Tracks inside VELO: VELO track

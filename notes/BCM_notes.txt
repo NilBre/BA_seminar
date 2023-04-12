@@ -17,7 +17,7 @@ BCM before LS2 upgrade:
 --> this is adequate for BCM diamonds since they show dark current in pico Amp range and dump threshold in micro Amp range
 -digitized signal sent through redundant optical fibres with rate of 125kHz to TELL1 readout board
 -firmware of TELL1 board applies "beam dump" logic to determine wether measured flux values are in problematic ranges
--TELL1 board located in D3 rack behind shielding wall in cavern where are IU is located
+-TELL1 board located in D3 rack behind shielding wall in cavern where are UI is located
 -> UI can do:
 --> 1.) when conditions are met TELL1 can request beam dump
 --> 2.) can inhibit injection of further bunches
