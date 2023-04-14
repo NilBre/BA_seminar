@@ -9,3 +9,13 @@ brief notes from L Funke master arbeit:
 -RICH1 momentum range: 2 - 40 GeV/c for high sensitivity
 -RICH2 momentum range: 150 - 100 GeV/c and placed forther downstream as higher momentum particles are deflected less my magnet
  
+from website: https://ams02.space/detector/ring-imaging-cherenkov-detector-rich
+
+-measures velocity and Z
+-consists of 2 radiators, an expansion volume and a photodetection plane 
+-radiators make cone when charged particles fly through
+-1. radiator: NaF for v/c > 0.75
+-2. radiator: aerogel for v/c > 0.953
+-mirror above increases detection efficiency
+-10880 photosensors in PMTs
+-with velocity the opening angle can be calculated
