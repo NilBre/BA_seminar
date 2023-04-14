@@ -78,12 +78,22 @@ sensitive components are placed so close to damaging beams that it needs to be c
 
 
 
+------------------------------------------
+More BCM from David Rolf:
 
+protecting the detector elements from possib;e damage such as radiation
+BCM is constructed as a safety system to prevent potential damage
+-> if happens: request beam dump to rpevent detector from being damaged
+BCM U and BCM D
 
+each has in symetrical shape...
+- 8 polycrystalline chemical vapor deposited diamond sensors (pCVD)
+- sensitive area: 10mm x 10mm and 0.5mm thick
+diamond sensors are chosen because
+- very radiation hard
+- charge collection capabilities very suitable for operation close to beam pipe
 
-
-
-
-
-
+Run 1 a 2, BCM operated successfully.
+Beam needed dump -> BCM was necessary!
+End of Run 2: 2 sesnors showed some damage -> being refurbished for Run 3
 

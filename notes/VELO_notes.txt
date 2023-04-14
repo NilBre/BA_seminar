@@ -7,4 +7,10 @@ short note from L funkte masterarbeit:
 -VELO inside VELO tank and inside it's own pressure chamber, separated from the beam pipe vacuum with 150 micro metre thin aluminium foil
 -can be close as near as 5.1 mm to the beam pipe for best possible vertex resolution
 -open state for unstable beam conditions or if something is broken
--
+--------------------------------------
+More upgraded VELO from David Rolf:
+
+-26 Modules each side, L shaped
+-open and clos possible
+-modules are a little offset in z for full coverage
+-VELO modules enclosed in a seperate vacuum than beam by 2 RF boxes, 1 for each side of VELO -> RF foil 200 microns thick

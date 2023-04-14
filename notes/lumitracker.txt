@@ -4,5 +4,3 @@ lumitracker purpose: provide measurement of luminosity by operating independentl
 how does it do it?
 -> measures luminosity by reconstructing and counting tracks and also measures the luminous region by extending these tracks to the interaction point.
 Reconstruction in real-time needed!
-
-

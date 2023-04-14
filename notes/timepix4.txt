@@ -1,0 +1,16 @@
+david rolf masterthesis:
+--------------------------------------------
+
+Timepix4 Telescope:
+
+-telescopes are tracking sensors to precisely reconstruct particle tracks
+-Timepix is next gen beam telescopes based on timepix family of readout ASICs (application sepcific integrated circuits)
+-Timepix4 chip: can measure time of arrival and time over threshold simultaneously -> good improvement compared to timepix3
+-Timepix4 developed for VELO but also operates for other detectors
+-picture, right handed coordinates
+-2 arms, 4 sensor planes each, arms enclosed in dry air-filled containiers
+-cooled to 15 degrees celsius
+-DUT (device under test) the thing in the middle, possibly a prototype of a detector, the outer parts are the timepix
+-
+-
+-
