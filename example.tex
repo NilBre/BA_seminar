@@ -179,64 +179,121 @@
 \maketitle
 
 \begin{frame}\frametitle{Vertex Locator (VELO)}
-  \begin{itemize}
-    \item $\bullet$\, Velo has 30 micro metre spatial hit resolution for 1 GeV transverse momentum
-    \item $\bullet$\, primary vertex finding eff roughly 90%
-    \item $\bullet$\, 52 modules with 4 hybrid pixel sensors each arranged in 2 havlves with 26 modules each
-    \item $\bullet$\, can be opened by up to 30mm (3cm)
-    \item $\bullet$\, VELO inside VELO tank and inside it's own pressure chamber, separated from the beam pipe vacuum with 150 micro metre thin aluminium foil
-    \item $\bullet$\, can be close as near as 5.1 mm to the beam pipe for best possible vertex resolution
-    \item $\bullet$\, open state for unstable beam conditions or if something is broken
-  \end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Scintillating Fibre Tracker (SciFi)}
-  \begin{itemize}
-    \item $\bullet$\, last element of the tracking system
-    \item $\bullet$\, large tracking system consisting of 12 layers in 3 stations
-    \item $\bullet$\, made out of scintillating fibre mats
-    \item $\bullet$\, spatial mass resolution of 100 microns
-    \item $\bullet$\, covering an area of 360 $m^2$
-    \item $\bullet$\, $X1-U-V-X2$ layer pattern with $U-V$ stereo angles repeating for every station
-  \end{itemize}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{itemize}
+        \item $\bullet$\, 30 $\si{\micro\metre}$ spatial hit resolution for 1 GeV transverse momentum
+        \item $\bullet$\, primary vertex finding efficiency \approx 90\%
+        \item $\bullet$\, 52 modules, 4 hybrid pixel sensors, arranged in 2 halves with 26 modules each
+        \item $\bullet$\, can be opened and closed depending on beam quality
+        \item $\bullet$\, VELO tank seperated from beam vacuum by RF foil
+        \item $\bullet$\, clos to beam pipe (5.1 mm) \to best possible vertex resolution
+%        \item $\bullet$\, open state for unstable beam conditions or if something is broken
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{plots/velo.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Upstream Tracker (UT)}
   \begin{itemize}
-    \item $\bullet$\, silicon strip tracker with 100 - 200 micro metre pitch
-    \item $\bullet$\, 4 tracking planes
+    \item $\bullet$\, 4 tracking planes upstream of the magnet
+    \item $\bullet$\, used for matching VELO to the SciFi by reducing ghost rate
     \item $\bullet$\, arranged in $X-U-V-X$ stereo pattern
-    \item $\bullet$\, U and V are rotated by \pm 5 degrees too achieve 2D spatial resolution while suppressing ghost hits in reconstruction
-    \item $\bullet$\, for momentum measurements there is a 4Tm (Tesla metre) integrated magnetic field between UT and SciFi
+    \item $\bullet$\, improves momentum resolution for low $p_T$ tracks
+    \item $\bullet$\, U and V rotated \pm 5 degrees \to achieve 2D spatial resolution while suppressing ghost hits
+    \item $\bullet$\, momentum measurements: integrated B-field = 4 Tm between UT and SciFi
   \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Scintillating Fibre Tracker (SciFi)}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth} 
+      \begin{itemize}
+        \item $\bullet$\, last element of the tracking system
+        \item $\bullet$\, 3 stations, 4 layes per station, 10 (12) Modules per layer
+        \item $\bullet$\, made out of scintillating fibre mats
+        \item $\bullet$\, spatial mass resolution of 100 $\si{\micro\metre}$
+        \item $\bullet$\, covering an area of 360 $\si{\metre\squared}$
+        \item $\bullet$\, $X1-U-V-X2$ layer pattern with $U-V$ stereo angles repeating for every station
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{plots/scifi_layers.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Tracktypes}
-  \begin{itemize}
-    \item $\bullet$\, Tracks inside VELO: VELO track
-    \item $\bullet$\, Long Tracks: extended VELO Tracks matches hits in UT and SciFi
-    \item $\bullet$\, Upstream Tracks: Tracks that leave the Detector after passing the UT
-    \item $\bullet$\, Tracks without hits in the VELO
-    \begin{itemize}
-      \item $\bullet$\, Downstream Tracks: Hits in UT and SciFi for long lived particles like Lambda and $K_s$
-      \item $\bullet$\, TTracks: only Hits in SciFi, here the seeding algorithm is used
-      \item $\bullet$\, TTracks found by seeding can also be found as long tracks by forward tracking
-    \end{itemize}
-    \item $\bullet$\, \to SciFi tracker has 99\% single hit efficiency
-  \end{itemize}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}  
+      \begin{itemize}
+        \item $\bullet$\, VELO tracks only inside VELO
+        \item $\bullet$\, Long Tracks: extended VELO Tracks matches hits in UT and SciFi
+        \item $\bullet$\, Upstream Tracks: Tracks that leave the Detector after passing the UT
+        \item $\bullet$\, Tracks without hits in the VELO
+        \begin{itemize}
+          \item $\bullet$\, Downstream Tracks: Hits in UT and SciFi for long lived particles like Lambda and $K_s$
+          \item $\bullet$\, TTracks: only Hits in SciFi, here the seeding algorithm is used
+          \item $\bullet$\, TTracks found by seeding can also be found as long tracks by forward tracking
+        \end{itemize}
+        \item $\bullet$\, \to SciFi tracker has 99\% single hit efficiency
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{plots/track_types.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Ring Immaging Cherenkov Detector}
-  \begin{itemize}
-    \item $\bullet$\, particle identification used to distinguish particles because track reco can only tell sign of particle change and momentum
-    \item $\bullet$\, at interaction point: ring imiging cherenkov detector 1 and 2
-    \item $\bullet$\, both detector volumes filled with flourcarbon gas \to HE particles generate cherenkov radiation
-    \item $\bullet$\, emitted light is caught by Photomultipliers
-    \item $\bullet$\, \to reconstruct speed \to reconstruct mass -> determine particle ID
-    \item $\bullet$\, works good for: kaons, pions, protons
-    \item $\bullet$\, RICH1 momentum range: 2 - 40 $GeV/c$ for high sensitivity
-    \item $\bullet$\, RICH2 momentum range: 150 - 100 GeV/c and placed forther downstream as higher momentum particles are deflected less my magnet
-  \end{itemize}
+\begin{frame}\frametitle{Ring Immaging Cherenkov Detector (RICH)}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{itemize}
+        \item $\bullet$\, particle identification used to distinguish particles because track reco can only tell sign of particle change and momentum
+        \item $\bullet$\, at interaction point: ring imiging cherenkov detector 1 and 2
+        \item $\bullet$\, both detector volumes filled with flourcarbon gas \to HE particles generate cherenkov radiation
+        \item $\bullet$\, emitted light is caught by Photomultipliers
+        \item $\bullet$\, \to reconstruct speed \to reconstruct mass -> determine particle ID
+        \item $\bullet$\, works good for: kaons, pions, protons
+        \item $\bullet$\, RICH1 momentum range: 2 - 40 $GeV/c$ for high sensitivity
+        \item $\bullet$\, RICH2 momentum range: 150 - 100 GeV/c and placed forther downstream as higher momentum particles are deflected less my magnet
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{plots/rich1.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{RICH Detector}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{itemize}
+	\item $\bullet$\, fbegf
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{plots/rich2.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{LumiTracker}
