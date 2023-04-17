@@ -1,13 +1,15 @@
 brief notes from L Funke master arbeit:
 
--particle identification used to distinguish particles because track reco can only tell sign of particle change and momentum
+-particle identification used to distinguish particles because track reco can only tell 
+sign of particle change and momentum
 -at interaction point: ring imiging cherenkov detector 1 and 2
 -both detector volumes filled with flourcarbon gas -> HE particles generate cherenkov radiation
 -emitted light is caught by Photomultipliers
 -> reconstruct speed -> reconstruct mass -> determine particle ID
 -works good for: kaons, pions, protons
 -RICH1 momentum range: 2 - 40 GeV/c for high sensitivity
--RICH2 momentum range: 150 - 100 GeV/c and placed forther downstream as higher momentum particles are deflected less my magnet
+-RICH2 momentum range: 150 - 100 GeV/c and placed forther downstream as higher momentum 
+particles are deflected less my magnet
  
 from website: https://ams02.space/detector/ring-imaging-cherenkov-detector-rich
 
