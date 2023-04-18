@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/example"] 1681766911 "build/example.bcf" "build/example.bbl" "build/example" 1681766949
-  "build/example.bcf" 1681766948 106635 c9f14f75b8f4bddaba282eb14e7fd3c9 "lualatex"
+["biber build/example"] 1681829559 "build/example.bcf" "build/example.bbl" "build/example" 1681842150
+  "build/example.bcf" 1681842149 106635 c9f14f75b8f4bddaba282eb14e7fd3c9 "lualatex"
   (generated)
   "build/example.bbl"
   "build/example.blg"
-["lualatex"] 1681766932 "example.tex" "build/example.pdf" "example" 1681766949
+["lualatex"] 1681842136 "example.tex" "build/example.pdf" "example" 1681842150
   "/etc/fonts/conf.d/10-antialias.conf" 1586167782 225 3629dcc380ac8c5b0306febc33b5667b ""
   "/etc/fonts/conf.d/10-hinting-slight.conf" 1586167782 696 690acea9572bf68b0ef975636002e4f3 ""
   "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf" 1586167782 2228 7bf8b372085774e6cbdae99235624440 ""
@@ -605,17 +605,17 @@
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1646737616 123506 62723ec6172dea317a18fec2ce07f3c0 ""
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1646737616 123936 dc040e51e6277b124cf6fc1187e7c939 ""
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc" 1657530145 123989 4f3b5e033e4edafa19c71c9510a17cdc ""
-  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua" 1681766946 14837 68ff82fb10a7d5cf743776a97d4fb29e "lualatex"
-  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1681766946 7635 5367537aa2ff4fb74a94b386262937b4 "lualatex"
+  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua" 1681842147 14837 68ff82fb10a7d5cf743776a97d4fb29e "lualatex"
+  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1681842147 7635 5367537aa2ff4fb74a94b386262937b4 "lualatex"
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1678272008 1219062 050ea92d65a716b18d9675f82a5f0415 ""
   "/home/nils/.local/texlive/2021/texmf-var/tex/generic/config/language.dat.lua" 1644097462 17745 7d542c06defa20bf59071cb47dc3d345 ""
   "/home/nils/.local/texlive/2021/texmf-var/web2c/luahbtex/lualatex.fmt" 1644097551 4555510 f2cb939b2e6bec524b98c695bc199369 ""
   "beamerthemetudo.sty" 1681195377 6744 7a898a3e1f863300aa1474991d5987c5 ""
-  "build/example.aux" 1681766948 4112 960600c358536d4dd56b027cd46dd7ab "lualatex"
-  "build/example.bbl" 1681766912 466 ee04f40f768daeed26442158e95aba61 "biber build/example"
-  "build/example.nav" 1681766948 2225 c1c5afbecb67aec0ba53ac1043f451e4 "lualatex"
-  "build/example.run.xml" 1681766948 2454 c5712fb5e4239e37774d01ad02cf1c49 "lualatex"
-  "example.tex" 1681766892 23799 b2e003bcc5a574bf5e7a99e6a8d8398d ""
+  "build/example.aux" 1681842149 4241 1dd17e37b6774d24d134cf60d2abd408 "lualatex"
+  "build/example.bbl" 1681829560 466 ee04f40f768daeed26442158e95aba61 "biber build/example"
+  "build/example.nav" 1681842149 2318 6bf076db6e1a8e33e3ccecc7cb97fcb8 "lualatex"
+  "build/example.run.xml" 1681842149 2454 c5712fb5e4239e37774d01ad02cf1c49 "lualatex"
+  "example.tex" 1681842103 24918 9d31dc94ade97b73f6f99fe2647ec448 ""
   "logos/FSP_LHCb_Lang_Farbig.png" 1678974716 42753 a23f485edfc93fe20e14c139c9cfa8fa ""
   "logos/blanco.png" 1681195377 4321 b60f9aae83674f5ef20e2b7c706c8bdb ""
   "logos/bmbf.png" 1678975018 52964 5b0a41918f8aa16cf670dab136385c05 ""
@@ -627,6 +627,8 @@
   "plots/bcmReadout.png" 1681756000 40481 ba8c6e9a3a32ae3a9fae64a89625c74f ""
   "plots/bcm_full.png" 1681755433 89788 ee2ae6f0dca52d5940fa71dc74771f4f ""
   "plots/data_aquisition_chain.png" 1681716574 180912 a4a0893e9bfaedfae7b402a94c4a888e ""
+  "plots/dia.png" 1681829848 4034 95d652d588f08ee1ec5b33f02a5e9bfd ""
+  "plots/giudance.png" 1681823489 52375 c03a52d12edb834f4b6d7a14e5d3b67d ""
   "plots/lumi.png" 1681726091 111799 4ed43d19d9f8dd2b62ac915ad05a29c1 ""
   "plots/lumiTracker_design.png" 1681716574 453118 f0ee10bcc406382ce77cc0f03738abad ""
   "plots/lumi_design.png" 1681728090 31073 e226ebe7e9fee636a464e82869f5eb01 ""

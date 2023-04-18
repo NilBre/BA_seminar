@@ -278,10 +278,25 @@
         \item $\bullet$\, Produkt: SCSF-78MJ
         \item $\bullet$\, gefärbter Styropor Kern und Wellenlängen Shifter
         \item $\bullet$\, Ummantelung mit höherem Brechungsindex für Totalreflektion innerhalb der Faser
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{plots/giudance.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Scintillierende Fasern}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{itemize}
         \item $\bullet$\, Geladene Teilchen regen $\pi$ orbitale der Benzolringe im Kernmaterial an.
         \item $\bullet$\, Relaxation führt zu szintillierendem Licht. Farbe beschleunigt den Prozess! (siehe: Förster-Transfer)
         \item $\bullet$\, Absorptions- und Emissionsspektrum so verschieden wie möglich!
-        \item $\bullet$\, \to Photonen direkt wieder absorbiert \to Wellenlängenverscheiber
+        \item $\bullet$\, \to Photonen direkt wieder absorbiert \to Wellenlängenverscheiber nötig
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
@@ -329,6 +344,10 @@
         \centering
         \includegraphics[width=\textwidth]{plots/FPGA.png}
       \end{figure}
+      \begin{itemize}
+        \item $\bullet$\, IO, LUT \to laufzeitverringern
+        \item $\bullet$\, Flip-Flop: Datenspeicher von 1 bit über unbegrenzte Zeit (RAM)
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
@@ -377,14 +396,12 @@
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item $\bullet$\, PID nötig um Teilchenart zu bestimmen (Spurrekonstruktion allein genügt nicht)
+        \item $\bullet$\, PID + Spurrekonstruktion \to Teilchenart
         \item $\bullet$\, RICH1 downstream vom VELO, RICH2 downstream vom SciFi
         \item $\bullet$\, Cherenkov Strahlung von geladenen Teilchen
-        \item $\bullet$\, SiPMs \to v der Teilchen \to rekonstruiere Masse \to PID
+        \item $\bullet$\, SiPMs \to Teilchen $\vec{v}$ \to rekonstruierte Masse \to PID
         \item $\bullet$\, sehr gut für: Kaonen, Pionen, Protonen
         \item $\bullet$\, RICH1 Impulsbereich: 2 - 40 $GeV/c$ for high sensitivity
-        \item $\bullet$\, RICH2 Impulsbereich: 150 - 100 $GeV/c$
-        \item $\bullet$\, weiter downstream: Teilchen mit hohem Impuls weniger stark abgelenkt
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
@@ -400,9 +417,11 @@
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-	       \item $\bullet$\, Kaonen threshold = 9.3 $GeV/c$
-         \item $\bullet$\, Aerogel: Trennung Protonen von Kaonen aufgrund von Öffnungswinkel
-         \item $\bullet$\, $\text{cos}\Theta = \frac{m}{n\cdot\beta}$
+	      \item $\bullet$\, Kaonen threshold = 9.3 $GeV/c$
+        \item $\bullet$\, Aerogel: Trennung Protonen von Kaonen aufgrund von Öffnungswinkel
+        \item $\bullet$\, $\text{cos}\Theta = \frac{m}{n\cdot\beta}$
+        \item $\bullet$\, RICH2 Impulsbereich: 150 - 100 $GeV/c$
+        \item $\bullet$\, weiter downstream: Teilchen mit hohem Impuls weniger stark abgelenkt
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
@@ -428,7 +447,7 @@
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
 	       \centering
-	       \includegraphics[width=\textwidth]{plots/lumi.png}
+	       \includegraphics[width=0.8\textwidth]{plots/lumi.png}
       \end{figure}
     \end{column}
   \end{columns}
@@ -438,13 +457,12 @@
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item $\bullet$\, 1 Siliziumsensor auf 3 ASICs gebaut, 6-8 Sensor Ebenen
+        \item $\bullet$\, 1 Siliziumsensor pro 3 ASICs, 6-8 Sensor Ebenen
         \item $\bullet$\, frontend "ASIC triples" mit hybrid board verkabelt (DAQ)
         \item $\bullet$\, Readout: identisch zum VELO readout
-        \item $\bullet$\, Hybrid speed data links for readout, GBTx: timing und kontrollsignale
+        \item $\bullet$\, Hybrid speed data links für readout, GBTx: timing und kontrollsignale
         \item $\bullet$\, OPB: für kommunikation zwischen den readout und monitor komponenten
-        \item $\bullet$\, Timing Informationen: SOL40 board benutzt VeloPix ASIC codierung für software und firmware
-        \item $\bullet$\, DAQ card auf remote server für spezifische messungen für den LumiTracker (lumi messung etc)
+        \item $\bullet$\, SOL40, TELL40: readout und monitoring
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
@@ -452,6 +470,30 @@
 	       \centering
 	       \includegraphics[width=\textwidth]{plots/lumi_design.png}
       \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{TELL40 und SOL40}
+  \begin{columns}
+    \begin{column}[c]{0.48\textwidth}
+      TELL40:
+      \begin{itemize}
+        \item $\bullet$\, readout board der PCIe40 express karte (behaust TELL40, FPGAs, GBP protocoll, PCCIe spuren \to 100Gbps daten transfer)
+      \end{itemize}
+      Aufgaben:
+      \begin{itemize}
+        \item $\bullet$\, sammelt daten der frontend Elektronik
+        \item $\bullet$\, prozessieren zu MEPs (multi-event packets)
+        \item $\bullet$\, sende MEPs durch PCIe zum DAQ Netzwerk zum weiter prozessieren (e.g. eventbuilding)
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      SOL40 - interface board:
+      \begin{itemize}
+        \item $\bullet$\, bietet interface für frontend der Subdetektoren
+        \item $\bullet$\, bietet volles monitoring und Kontrolle über die frontend Elektronik
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
@@ -489,8 +531,8 @@
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \includegraphics[width=0.5\textwidth]{plots/timepix4.png}
-      \includegraphics[width=0.5\textwidth]{plots/lumi_res.png}
+      \includegraphics[width=0.7\textwidth]{plots/timepix4.png}
+      \includegraphics[width=0.7\textwidth]{plots/lumi_res.png}
     \end{column}
   \end{columns}
 \end{frame}
@@ -518,45 +560,42 @@
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \includegraphics[width=0.8\textwidth]{plots/bcm_full.png}
+      \includegraphics[width=\textwidth]{plots/bcm_full.png}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Diamten als Detektormaterial}
-  \begin{itemize}
-    \item $\bullet$\, Bethe-Bloch Formel für Energy Deposition
-    \item $\bullet$\, Kristaliner Kohlenstoff, 2 ineinander verdrehte fcc gitter
-    \item $\bullet$\, 43 eV um Atom aus Gitter zu entfernen
-    \item $\bullet$\, Pro: mechanisch hartes Material
-    \item $\bullet$\, band gap of 5.47 eV indicates insulator but can be semiconductor as well
-    \item $\bullet$\, large band gap \to low number of charge carriers \to low dark current
-    \item $\bullet$\, large band gap + high displcement threshold \to very radiation hard
-    \item $\bullet$\, CCE picture on page 30
-  \end{itemize}
+\begin{frame}\frametitle{Diamanten als Detektormaterial}
+  \begin{columns}
+    \begin{column}[c]{0.58\textwidth}
+      \begin{itemize}
+        \item $\bullet$\, Bethe-Bloch Formel für Energy Deposition
+        \item $\bullet$\, Kristaliner Kohlenstoff, 2 ineinander verdrehte fcc gitter
+        \item $\bullet$\, Pro: mechanisch hartes Material
+        \item $\bullet$\, bandlücke: 5.47 eV, isolator aber kann als halbleiter operieren
+        \item $\bullet$\, große bandlücke \to wenig ladungsträger \to low dark current
+        \item $\bullet$\, große bandlücke \to sehr strahlungshart
+      \end{itemize}
+    \end{column}
+    \begin{column}[c]{0.38\textwidth}
+      \includegraphics[width=\textwidth]{plots/dia.png}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-% \begin{frame}\frametitle{Diamonds and BCM}
-%   \begin{itemize}
-%     \item $\bullet$\, radiation damage \to sensors failed \to replacement of whole system
-%     \item $\bullet$\, to avoid said damage in the future:
-%     \item $\bullet$\, \to characterization of diamond sensors with charge collection efficiency
-%   \end{itemize}
-% \end{frame}
-
-\begin{frame}\frametitle{BCM Diamant Readout (pre upgrade)}
+\begin{frame}\frametitle{BCM Diamanten Readout (pre upgrade)}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
         \item $\bullet$\, Strom ausgelesen mit CFC (current-to-frequency converter) cards
         % \item $\bullet$\, CFC cards integration time = 40 micro seconds
-        \item $\bullet$\, CFC cards measurement range = (2.5 pico Amp (pA), 1 milli Amp (mA))
+        \item $\bullet$\, CFC cards Messungsbereich = [2.5 pico Amp (pA), 1 milli Amp (mA)]
         \item $\bullet$\, gut für BCM Diamanten: Dunkelstrom (spontane freie Ladungsträger durch Wärme in lichtempfindlichen Halbleitern) in pico Amp Bereich und dump threshold in micro Amp Bereich
         \item $\bullet$\, digitized signal sent through redundant optical fibres with rate of 125kHz to TELL1 readout board
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{plots/bcmReadout.png}
+      \includegraphics[width=\textwidth]{plots/BCM_U_and_BCM_D.png}
     \end{column}
   \end{columns}
 \end{frame}
@@ -573,12 +612,14 @@
           \item $\bullet$\, Beam dump anfragen bei kritischen konditionen
           \item $\bullet$\, zusätzliche Bunches injizieren
         \end{itemize}
-        \item $\bullet$\, post-mortem trigger: snapshot der aktuellen daten im System um nach Fehlerquellen zu suchen
-        \item $\bullet$\, Signal zum VELO wenn beam kritisch
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{plots/data_aquisition_chain.png}
+      \begin{itemize}
+        \item $\bullet$\, post-mortem trigger: snapshot der aktuellen daten im System um nach Fehlerquellen zu suchen
+        \item $\bullet$\, Signal zum VELO wenn beam kritisch
+      \end{itemize}
+      \includegraphics[width=\textwidth]{plots/bcmReadout.png}
     \end{column}
   \end{columns}
 \end{frame}
@@ -587,28 +628,31 @@
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item $\bullet$\, 2019 \to Heute: neue Readout-Elektronik
         \item $\bullet$\, \to PCIe40 (BCM40 wird es für BCM genannt)
         \item $\bullet$\, BCM40 im Kontrollraum, CIBU Kaverne \to Transfer Bauteil nötig
         \item $\bullet$\, \to MIBAD board: Machine Interface and Beam Abort Decision board
         \item $\bullet$\, MIBAD: nutzt FPGAs für low-level Aufgaben
         \begin{itemize}
-          \item $\bullet$\, implementierte beam-dump logik
+          \item $\bullet$\, beam-dump logik
           \item $\bullet$\, read-out data + post-mortem trigger
           \item $\bullet$\, VELO OK Signal
         \end{itemize}
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{plots/BCM_U_and_BCM_D.png}
+      \begin{itemize}
+        \item $\bullet$\, 2019 \to Heute: neue Readout-Elektronik
+      \end{itemize}
+      \includegraphics[width=\textwidth]{plots/data_aquisition_chain.png}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{BCM40 boards: Kontrollraum}
+\begin{frame}\frametitle{Diamantmessungen}
   \begin{itemize}
-    \item $\bullet$\, BCM40: interface zum MIBAD board
-    \item $\bullet$\, \to Kontrolle und "monitoring" des gesamten BCM
+    \item $\bullet$\, beam loss observations at injection region
+    \item $\bullet$\, um das CMS: beam halo rate observation
+    \item $\bullet$\, Im CMS: luminositätsmessung und beam halo messung
   \end{itemize}
   \to sensible Bauteile in strahlungsbelasteter Umgebung \to durchgehend unter Beobachtung
   \to BCM extrem wichtig!
