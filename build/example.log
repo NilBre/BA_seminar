@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  18 APR 2023 20:22
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  19 APR 2023 00:16
  restricted system commands enabled.
 **example.tex
 (./example.tex
@@ -909,12 +909,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2 on input line 10
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -2799,12 +2799,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2 on input line 22
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 22
 )
@@ -4203,6 +4203,43 @@ Overfull \hbox (212.0751pt too wide) has occurred while \output is active
 [23
 
 <./plots/data_aquisition_chain.png>]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 659.
+(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
+File: logos/blanco.png Graphic file (type png)
+<use logos/blanco.png>
+Package luatex.def Info: logos/blanco.png  used on input line 659.
+(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
+File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
+<use logos/lhcb-logo-0121.pdf>
+Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 659.
+(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
+File: logos/blanco.png Graphic file (type png)
+<use logos/blanco.png>
+Package luatex.def Info: logos/blanco.png  used on input line 659.
+(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
+File: logos/FSP_LHCb_Lang_Farbig.png Graphic file (type png)
+<use logos/FSP_LHCb_Lang_Farbig.png>
+Package luatex.def Info: logos/FSP_LHCb_Lang_Farbig.png  used on input line 659
+.
+(luatex.def)             Requested size: 91.96935pt x 22.76271pt.
+File: logos/blanco.png Graphic file (type png)
+<use logos/blanco.png>
+Package luatex.def Info: logos/blanco.png  used on input line 659.
+(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
+File: logos/bmbf.png Graphic file (type png)
+<use logos/bmbf.png>
+Package luatex.def Info: logos/bmbf.png  used on input line 659.
+(luatex.def)             Requested size: 45.45313pt x 22.76271pt.
+
+Overfull \hbox (212.0751pt too wide) has occurred while \output is active
+ [][][][][][][][]  
+ []
+
+[24
+
+]
 \tf@nav=\write6
 
 \openout6 = example.nav
@@ -4280,16 +4317,16 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 79706 strings out of 477811
+ 79752 strings out of 477811
  125016,3417909 words of node,token memory allocated
- 8706 words of node memory still in use:
-   142 hlist, 11 vlist, 24 rule, 34 disc, 16 local_par, 20 math, 222 glue, 81 ke
-rn, 59 penalty, 5 margin_kern, 328 glyph, 291 attribute, 77 glue_spec, 291 attri
-bute_list, 4 write, 48 pdf_literal, 52 pdf_colorstack, 8 pdf_setmatrix, 8 pdf_sa
-ve, 8 pdf_restore nodes
-   avail lists: 1:9,2:347,3:235,4:223,5:327,6:42,7:1742,8:20,9:428,10:10,11:170
- 96728 multiletter control sequences out of 65536+600000
- 202 fonts using 54721431 bytes
+ 6578 words of node memory still in use:
+   104 hlist, 9 vlist, 23 rule, 44 disc, 9 local_par, 6 math, 123 glue, 59 kern,
+ 28 penalty, 1 margin_kern, 284 glyph, 194 attribute, 77 glue_spec, 194 attribut
+e_list, 4 write, 24 pdf_literal, 42 pdf_colorstack, 7 pdf_setmatrix, 7 pdf_save,
+ 7 pdf_restore nodes
+   avail lists: 1:9,2:540,3:293,4:237,5:350,6:49,7:1901,8:20,9:469,10:10,11:160
+ 96730 multiletter control sequences out of 65536+600000
+ 202 fonts using 54721259 bytes
  128i,18n,144p,1003b,2454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/nils/.local/texlive/2021/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.en
 c}</home/nils/.local/texlive/2021/texmf-dist/fonts/opentype/public/firamath/Fira
@@ -4301,10 +4338,10 @@ onts/opentype/public/fira/FiraSans-Light.otf></home/nils/.local/texlive/2021/tex
 mf-dist/fonts/opentype/public/fira/FiraSans-Medium.otf></home/nils/.local/texliv
 e/2021/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></home/nils/.local/
 texlive/2021/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb>
-Output written on example.pdf (23 pages, 4826476 bytes).
+Output written on example.pdf (24 pages, 4827637 bytes).
 
-PDF statistics: 283 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 131072)
+PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 
